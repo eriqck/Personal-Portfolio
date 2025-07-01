@@ -37,8 +37,8 @@ A smart conversational chatbot that interacts with users and assists with inform
 > - Clean, chat-like UI with dark/light mode
 > - Tracks chat history and supports follow-up questions
 > - Built using HTML, JavaScript, Node.js
-
-🔗 [Live Demo](#) | 💻 [Source Code](#)
+> - 
+live demo: https://ai-assistant-app-frontend.onrender.com/
 
 ---
 
