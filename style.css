@@ -317,7 +317,7 @@ section {
     margin: auto 0;
 }
 
-/* Bulge out and in on hover */
+/* Bulge out and in on hover 
 .section__pic-container:hover img {
     transform: scale(1.08);
     box-shadow: 0 8px 32px rgba(0,0,0,0.18);
@@ -325,7 +325,7 @@ section {
 
 .section__pic-container:active img {
     transform: scale(0.96);
-}
+} */
 
 /* EXPERIENCE SECTION */
 
