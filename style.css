@@ -348,43 +348,6 @@ button {
   padding: 24px;
 }
 
-.hero-profile {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 24px;
-}
-
-.hero-profile-image {
-  width: 84px;
-  height: 84px;
-  flex: 0 0 auto;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 24px;
-  background: var(--bg-panel);
-}
-
-.hero-profile-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.hero-profile-copy strong {
-  display: block;
-  font-size: 1.15rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-}
-
-.hero-profile-copy span {
-  display: block;
-  margin-top: 6px;
-  color: var(--muted);
-  line-height: 1.6;
-}
-
 .panel-heading {
   display: flex;
   align-items: flex-start;
@@ -515,6 +478,18 @@ button {
   border-color: var(--line-strong);
 }
 
+.work-card:nth-child(1) {
+  background: linear-gradient(180deg, rgba(52, 211, 153, 0.1), var(--bg-panel));
+}
+
+.work-card:nth-child(2) {
+  background: linear-gradient(180deg, rgba(96, 165, 250, 0.1), var(--bg-panel));
+}
+
+.work-card:nth-child(3) {
+  background: linear-gradient(180deg, rgba(244, 114, 182, 0.1), var(--bg-panel));
+}
+
 .work-card h3 {
   margin-top: 16px;
   font-size: 1.5rem;
@@ -545,6 +520,18 @@ button {
     background-color 180ms ease;
 }
 
+.project-card:nth-child(1) {
+  background: linear-gradient(180deg, rgba(52, 211, 153, 0.11), var(--bg-panel));
+}
+
+.project-card:nth-child(2) {
+  background: linear-gradient(180deg, rgba(251, 146, 60, 0.12), var(--bg-panel));
+}
+
+.project-card:nth-child(3) {
+  background: linear-gradient(180deg, rgba(96, 165, 250, 0.12), var(--bg-panel));
+}
+
 .project-card h3 {
   margin-top: 14px;
   font-size: 2rem;
@@ -561,6 +548,26 @@ button {
 .project-tags {
   gap: 10px;
   margin-top: 24px;
+}
+
+.project-tags span:nth-child(4n + 1) {
+  border-color: rgba(52, 211, 153, 0.28);
+  background: rgba(52, 211, 153, 0.12);
+}
+
+.project-tags span:nth-child(4n + 2) {
+  border-color: rgba(96, 165, 250, 0.28);
+  background: rgba(96, 165, 250, 0.12);
+}
+
+.project-tags span:nth-child(4n + 3) {
+  border-color: rgba(251, 146, 60, 0.28);
+  background: rgba(251, 146, 60, 0.12);
+}
+
+.project-tags span:nth-child(4n + 4) {
+  border-color: rgba(244, 114, 182, 0.26);
+  background: rgba(244, 114, 182, 0.12);
 }
 
 .project-button {

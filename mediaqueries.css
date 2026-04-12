@@ -57,15 +57,6 @@
     font-size: 0.98rem;
   }
 
-  .hero-profile {
-    align-items: flex-start;
-  }
-
-  .hero-profile-image {
-    width: 72px;
-    height: 72px;
-  }
-
   .button,
   .project-button {
     width: 100%;
