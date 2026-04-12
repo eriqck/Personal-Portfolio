@@ -25,7 +25,11 @@ html {
 }
 
 body {
-  background: var(--bg);
+  background:
+    radial-gradient(circle at top left, rgba(232, 111, 76, 0.16), transparent 26%),
+    radial-gradient(circle at top right, rgba(15, 138, 111, 0.16), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(22, 123, 142, 0.14), transparent 24%),
+    linear-gradient(180deg, #f8faf9 0%, #eef4f2 45%, #edf2f6 100%);
   color: var(--text);
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
@@ -196,7 +200,7 @@ nav {
 }
 
 .section--alt {
-  background: rgba(255, 255, 255, 0.58);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.7));
 }
 
 .section-shell {
@@ -379,7 +383,8 @@ article p {
 .contact-card {
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: var(--surface);
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 18px 36px rgba(23, 26, 31, 0.06);
 }
 
 .summary-item {
@@ -507,6 +512,20 @@ article p {
   color: #f8fbfa;
 }
 
+.project-visual--teacher {
+  background:
+    radial-gradient(circle at top right, rgba(255, 124, 31, 0.18), transparent 24%),
+    linear-gradient(180deg, #fcfcfb 0%, #f4f7fb 100%);
+  color: #18233d;
+}
+
+.project-visual--thika {
+  background:
+    radial-gradient(circle at top center, rgba(233, 127, 52, 0.2), transparent 18%),
+    linear-gradient(180deg, #f8f1e6 0%, #f7f3ed 100%);
+  color: #1c1d1f;
+}
+
 .visual-top {
   display: flex;
   flex-wrap: wrap;
@@ -546,6 +565,197 @@ article p {
   margin-top: 6px;
   color: rgba(248, 251, 250, 0.76);
   font-size: 0.82rem;
+}
+
+.preview-heading {
+  display: grid;
+  gap: 6px;
+}
+
+.preview-heading strong {
+  max-width: 14ch;
+  font-size: 2rem;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.preview-heading span {
+  max-width: 34ch;
+  color: #4f6078;
+  font-size: 0.86rem;
+}
+
+.teacher-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.teacher-plan {
+  position: relative;
+  display: grid;
+  gap: 12px;
+  min-height: 210px;
+  border: 1px solid rgba(15, 138, 111, 0.18);
+  border-radius: 24px;
+  padding: 18px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55);
+}
+
+.teacher-plan--parent {
+  background:
+    radial-gradient(circle at top right, rgba(255, 125, 25, 0.24), transparent 28%),
+    linear-gradient(180deg, #fff4eb 0%, #fff7f3 100%);
+  border-color: rgba(255, 145, 69, 0.35);
+}
+
+.teacher-plan--teacher {
+  background:
+    radial-gradient(circle at top right, rgba(15, 138, 111, 0.16), transparent 28%),
+    linear-gradient(180deg, #eefcf7 0%, #edf9f6 100%);
+  border-color: rgba(40, 196, 153, 0.28);
+}
+
+.preview-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border-radius: 999px;
+  background: #ff7e1f;
+  padding: 6px 12px;
+  color: #fffaf5;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.teacher-plan p,
+.teacher-plan li {
+  color: #23565a;
+}
+
+.teacher-plan h4 {
+  font-size: 2.5rem;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.teacher-plan h4 span {
+  color: #70819b;
+  font-size: 1rem;
+}
+
+.teacher-plan ul {
+  display: grid;
+  gap: 8px;
+  padding-left: 18px;
+  font-size: 0.86rem;
+}
+
+.thika-preview-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.72);
+  padding: 14px 16px;
+}
+
+.thika-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #e83b2f 0%, #b21811 100%);
+}
+
+.thika-brand strong,
+.thika-item strong {
+  display: block;
+  line-height: 1.1;
+}
+
+.thika-brand span,
+.thika-item span,
+.thika-preview-cart span {
+  color: #6a6257;
+  font-size: 0.82rem;
+}
+
+.thika-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.thika-actions span {
+  border-radius: 999px;
+  padding: 9px 14px;
+  color: #fffdf8;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.thika-actions span:first-child {
+  background: linear-gradient(180deg, #2fd767 0%, #1cc95a 100%);
+}
+
+.thika-actions span:last-child {
+  background: linear-gradient(180deg, #0e5f53 0%, #073f36 100%);
+}
+
+.thika-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.thika-item {
+  display: grid;
+  gap: 10px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 14px;
+}
+
+.thika-image {
+  border-radius: 16px;
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+}
+
+.thika-image--one {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0)),
+    url("./assets/thika-sacks-project.jpg");
+}
+
+.thika-image--two {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0)),
+    linear-gradient(135deg, #c7d3bf 0%, #7aa282 55%, #d8c79f 100%);
+}
+
+.thika-image--three {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0)),
+    linear-gradient(135deg, #f8ece0 0%, #d7c9bb 52%, #d1c17c 100%);
+}
+
+.thika-preview-cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #0a4d42 0%, #063c34 100%);
+  padding: 14px 18px;
+  color: #f6fbfa;
 }
 
 .project-body {
@@ -599,7 +809,12 @@ article p {
 }
 
 footer {
-  padding: 0 0 32px;
+  margin-top: 20px;
+  padding: 28px 0 32px;
+  background:
+    radial-gradient(circle at top left, rgba(232, 111, 76, 0.2), transparent 22%),
+    radial-gradient(circle at top right, rgba(22, 123, 142, 0.16), transparent 20%),
+    linear-gradient(180deg, #11211f 0%, #18292f 100%);
 }
 
 .footer-shell {
@@ -608,12 +823,15 @@ footer {
   gap: 16px;
   align-items: center;
   padding-top: 10px;
-  border-top: 1px solid var(--line);
+}
+
+footer .nav-links a,
+footer p {
+  color: rgba(245, 249, 248, 0.8);
+  font-size: 0.95rem;
 }
 
 footer p {
-  color: var(--muted);
-  font-size: 0.95rem;
   text-align: right;
 }
 

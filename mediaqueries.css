@@ -52,6 +52,11 @@
     grid-column: auto;
   }
 
+  .teacher-preview-grid,
+  .thika-preview-grid {
+    grid-template-columns: 1fr;
+  }
+
   .title--hero {
     font-size: 2.8rem;
   }
@@ -114,6 +119,20 @@
 
   .visual-grid {
     grid-template-columns: 1fr;
+  }
+
+  .preview-heading strong {
+    font-size: 1.5rem;
+  }
+
+  .teacher-plan h4 {
+    font-size: 2rem;
+  }
+
+  .thika-preview-topbar,
+  .thika-preview-cart {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .contact-card {
