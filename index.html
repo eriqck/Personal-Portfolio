@@ -4,378 +4,402 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Erick Njoroge | Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Portfolio for Erick Njoroge, a full stack developer building education, commerce, and agriculture products with modern web tools."
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
     <nav id="desktop-nav">
       <div class="logo">Erick Njoroge</div>
-      <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Erick Njoroge</div>
+      <div class="hamburger-menu">
+        <button
+          class="hamburger-icon"
+          type="button"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          onclick="toggleMenu()"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section id="profile" class="section section--hero">
+        <div class="section-shell hero-grid">
+          <div class="section__text">
+            <p class="section__text__p1">Full Stack Developer</p>
+            <h1 class="title title--hero">I build practical digital products that people can actually use.</h1>
+            <p class="hero-copy">
+              I work across frontend and backend to ship clean interfaces, reliable APIs, and
+              payment-ready platforms. My recent work spans education, commerce, and agriculture.
+            </p>
+
+            <div class="hero-badges">
+              <span>Next.js</span>
+              <span>Node.js</span>
+              <span>TypeScript</span>
+              <span>Payments</span>
+            </div>
+
+            <div class="btn-container btn-container--hero">
+              <a class="btn btn-color-1" href="./assets/Stockholm-Resume.pdf" target="_blank" rel="noreferrer">
+                Download CV
+              </a>
+              <a class="btn btn-color-2" href="#projects">View Projects</a>
+            </div>
+
+            <div id="socials-container">
+              <a href="https://github.com/eriqck" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <img src="./assets/github.png" alt="GitHub icon" class="icon" />
+              </a>
+              <a
+                href="https://linkedin.com/in/developererick"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn"
+              >
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon" />
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="section__pic-container">
+              <img src="./assets/erikpp (2).png" alt="Erick Njoroge portrait" />
+            </div>
+            <div class="hero-summary">
+              <div class="summary-item">
+                <strong>3+ years</strong>
+                <span>Building full stack web products</span>
+              </div>
+              <div class="summary-item">
+                <strong>3 live-ready concepts</strong>
+                <span>Education, ecommerce, and agri-tech delivery</span>
+              </div>
+              <div class="summary-item">
+                <strong>Core focus</strong>
+                <span>Responsive UX, APIs, auth, storage, and payment flows</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="section-shell about-grid">
+          <div class="about-intro">
+            <p class="section__text__p1">About Me</p>
+            <h2 class="title title--section">I like products that solve a clear problem and feel easy to trust.</h2>
+            <p class="about-copy">
+              I am a full stack developer with hands-on experience shipping product-focused web
+              experiences from concept to interface, API, and database. I care about clarity in the
+              UI, sensible backend structure, and turning rough ideas into something a user can move
+              through without friction.
+            </p>
+            <p class="about-copy">
+              The projects below show the kind of work I enjoy most: subscription products, custom
+              storefronts, dashboards, search, file flows, and integrated payments.
+            </p>
+          </div>
+
+          <div class="about-details-container">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+              <h3>Work Style</h3>
+              <p>Product-minded delivery<br />Frontend and backend ownership</p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>Software Development<br />Computer Science background</p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/checkmark.png" alt="Stack icon" class="icon" />
+              <h3>Go-To Stack</h3>
+              <p>Next.js, React, Node.js<br />Supabase, MySQL, Paystack</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section section--alt">
+        <div class="section-shell">
+          <p class="section__text__p1">Experience</p>
+          <h2 class="title title--section">Tools I reach for most</h2>
+
+          <div class="experience-details-container">
+            <div class="details-container">
+              <h3 class="experience-sub-title">Frontend Development</h3>
+              <div class="article-container">
+                <article>
+                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                  <div>
+                    <h4>HTML &amp; CSS</h4>
+                    <p>Responsive layouts and polished presentation</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                  <div>
+                    <h4>JavaScript</h4>
+                    <p>Interactive UI and product behavior</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                  <div>
+                    <h4>React &amp; Next.js</h4>
+                    <p>Modern app flows and reusable interfaces</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                  <div>
+                    <h4>TypeScript</h4>
+                    <p>Safer app structure and maintainability</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="details-container">
+              <h3 class="experience-sub-title">Backend Development</h3>
+              <div class="article-container">
+                <article>
+                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                  <div>
+                    <h4>Node.js &amp; Express</h4>
+                    <p>REST APIs, auth, and business logic</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                  <div>
+                    <h4>Supabase</h4>
+                    <p>Storage, auth flows, and app data</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                  <div>
+                    <h4>MySQL &amp; MongoDB</h4>
+                    <p>Structured persistence for growing products</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                  <div>
+                    <h4>Paystack Integrations</h4>
+                    <p>Checkout, verification, and payment callbacks</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-shell">
+          <p class="section__text__p1">Selected Work</p>
+          <h2 class="title title--section">Projects I have recently built</h2>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-media">
+                <img
+                  src="./assets/teacher-mwangi-project.png"
+                  alt="Teacher Mwangi Academy project preview"
+                  class="project-img"
+                />
+              </div>
+              <div class="project-body">
+                <p class="project-kicker">EdTech / Membership Platform</p>
+                <h3 class="project-title">Teacher Mwangi Academy</h3>
+                <p class="project-copy">
+                  A Next.js platform for selling Kenyan CBE and secondary revision materials with
+                  parent and teacher subscriptions, Google sign-in, protected resources, Supabase
+                  storage, and Paystack checkout.
+                </p>
+                <div class="project-tags">
+                  <span>Next.js 15</span>
+                  <span>TypeScript</span>
+                  <span>Supabase</span>
+                  <span>Paystack</span>
+                </div>
+                <a
+                  class="btn btn-color-2 project-btn"
+                  href="https://github.com/eriqck/Teacher-Mwangi-Academy"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Open Repository
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-media">
+                <img
+                  src="./assets/thika-sacks-project.jpg"
+                  alt="Thika Sacks project preview"
+                  class="project-img"
+                />
+              </div>
+              <div class="project-body">
+                <p class="project-kicker">Commerce / Custom Storefront</p>
+                <h3 class="project-title">Thika Sacks</h3>
+                <p class="project-copy">
+                  A conversion-focused storefront for sack buyers with searchable catalog browsing,
+                  quantity controls, cart summary, and WhatsApp checkout for wholesale and retail
+                  orders.
+                </p>
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>Commerce UX</span>
+                </div>
+                <a
+                  class="btn btn-color-2 project-btn"
+                  href="https://github.com/eriqck/thika-sacks"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Open Repository
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-media project-media--custom">
+                <div class="project-visual project-visual--agrinova">
+                  <div class="visual-top">
+                    <span>Marketplace</span>
+                    <span>Memberships</span>
+                  </div>
+                  <div class="visual-grid">
+                    <div>
+                      <strong>Farmers</strong>
+                      <span>Listings and products</span>
+                    </div>
+                    <div>
+                      <strong>Buyers</strong>
+                      <span>Orders and checkout</span>
+                    </div>
+                    <div>
+                      <strong>Weather</strong>
+                      <span>Planning and field data</span>
+                    </div>
+                    <div>
+                      <strong>Admin</strong>
+                      <span>Payments and operations</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <p class="project-kicker">AgriTech / Marketplace MVP</p>
+                <h3 class="project-title">AgriNova</h3>
+                <p class="project-copy">
+                  A smart agriculture marketplace MVP with Express and MySQL on the backend plus a
+                  Next.js frontend for farmer onboarding, produce listings, memberships, orders,
+                  deliveries, and Paystack payment flows.
+                </p>
+                <div class="project-tags">
+                  <span>Express</span>
+                  <span>MySQL</span>
+                  <span>Next.js</span>
+                  <span>JWT Auth</span>
+                </div>
+                <a
+                  class="btn btn-color-2 project-btn"
+                  href="https://github.com/eriqck/AgriNova"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Open Repository
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section--alt">
+        <div class="section-shell">
+          <p class="section__text__p1">Get In Touch</p>
+          <h2 class="title title--section">Let&apos;s build something useful</h2>
+
+          <div class="contact-grid">
+            <a class="contact-card" href="mailto:ericdavid348@gmail.com">
+              <img src="./assets/email.png" alt="Email icon" class="icon contact-icon" />
+              <div>
+                <h3>Email</h3>
+                <p>ericdavid348@gmail.com</p>
+              </div>
+            </a>
+
+            <a
+              class="contact-card"
+              href="https://linkedin.com/in/developererick"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+              <div>
+                <h3>LinkedIn</h3>
+                <p>linkedin.com/in/developererick</p>
+              </div>
+            </a>
+
+            <a class="contact-card" href="https://github.com/eriqck" target="_blank" rel="noreferrer">
+              <img src="./assets/github.png" alt="GitHub icon" class="icon contact-icon" />
+              <div>
+                <h3>GitHub</h3>
+                <p>github.com/eriqck</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="section-shell footer-shell">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <p>Copyright &#169; 2026 Erick Njoroge. All Rights Reserved.</p>
       </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Erick Njoroge</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/erikpp (2).png" alt="Erick Njoroge profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Erick Njoroge</h1>
-        <p class="section__text__p2">Full Stack Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/in/developererick'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/eriqck'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/profile-pikk.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>3+ years <br />Full Stack Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Cert. in Software Development<br />Bs Computer Science</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-                I'm a Full Stack Developer with over 3 years of hands-on experience building scalable, high-performance web applications using the MERN stack
-               (MongoDB, Express.js, React.js, and Node.js). I specialize in creating clean, responsive frontends and robust, secure backends that work seamlessly together.
-
-                Throughout my career, I’ve delivered end-to-end solutions—from designing intuitive
-                user interfaces to developing RESTful APIs and managing databases.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>ReactJS</h3>
-                  <p>Experienced>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Back-End Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MongoDB</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="AI Chat Bot"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">AI Chat Bot</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/eriqck/React-ChatBOT.git'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/eriqck/React-ChatBOT.git'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Blog Web App"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Blog Web App</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">E-commerce Store</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">ericdavid348@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2023 Erick Njoroge. All Rights Reserved.</p>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
