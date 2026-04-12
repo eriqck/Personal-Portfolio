@@ -29,6 +29,7 @@ body {
   color: var(--text);
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 img {
@@ -463,13 +464,18 @@ article p {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
   margin-top: 28px;
+  align-items: stretch;
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   overflow: hidden;
 }
 
 .project-media {
+  min-height: 240px;
   border-bottom: 1px solid var(--line);
   background: #dfeceb;
 }
@@ -481,10 +487,17 @@ article p {
 }
 
 .project-media--custom {
+  display: flex;
+  align-items: stretch;
   padding: 20px;
 }
 
 .project-visual {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
   border-radius: 8px;
   padding: 18px;
 }
@@ -496,6 +509,7 @@ article p {
 
 .visual-top {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 10px;
   margin-bottom: 18px;
@@ -536,6 +550,8 @@ article p {
 
 .project-body {
   display: grid;
+  flex: 1;
+  align-content: start;
   gap: 14px;
   padding: 22px;
 }
@@ -551,10 +567,12 @@ article p {
 .project-title {
   font-size: 1.4rem;
   letter-spacing: -0.02em;
+  line-height: 1.15;
 }
 
 .project-btn {
   width: 100%;
+  margin-top: auto;
 }
 
 .contact-grid {

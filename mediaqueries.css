@@ -2,7 +2,6 @@
   .hero-grid,
   .about-grid,
   .experience-details-container,
-  .projects-grid,
   .contact-grid {
     grid-template-columns: 1fr;
   }
@@ -10,6 +9,16 @@
   .title--hero,
   .title--section {
     max-width: none;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .projects-grid .project-card:last-child {
+    grid-column: 1 / -1;
   }
 }
 
@@ -33,6 +42,14 @@
 
   .section--hero {
     padding-top: 52px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid .project-card:last-child {
+    grid-column: auto;
   }
 
   .title--hero {
