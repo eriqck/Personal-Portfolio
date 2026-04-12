@@ -229,12 +229,20 @@ button {
   font-size: 0.9rem;
 }
 
-.hero-section h1 {
-  max-width: 980px;
-  font-size: clamp(3rem, 7vw, 5.5rem);
-  font-weight: 600;
-  line-height: 1.02;
-  letter-spacing: -0.05em;
+.hero-portrait-large {
+  overflow: hidden;
+  width: min(100%, 420px);
+  border: 1px solid var(--line);
+  border-radius: 32px;
+  background: var(--bg-panel);
+  box-shadow: 0 24px 54px var(--shadow);
+}
+
+.hero-portrait-large img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
 }
 
 .hero-copy,
