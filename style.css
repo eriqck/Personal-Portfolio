@@ -310,9 +310,9 @@ button {
 }
 
 .button-primary {
-  background: var(--accent);
-  color: #0f172a;
-  box-shadow: 0 20px 34px var(--accent-shadow);
+  background: #3b82f6;
+  color: #eff6ff;
+  box-shadow: 0 20px 34px rgba(59, 130, 246, 0.24);
 }
 
 .button-secondary {
