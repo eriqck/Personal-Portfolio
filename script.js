@@ -31,7 +31,7 @@ function toggleMobileNav(forceOpen) {
 }
 
 const savedTheme = window.localStorage.getItem("portfolio-theme");
-applyTheme(savedTheme === "light" ? "light" : "dark");
+applyTheme(savedTheme === "dark" ? "dark" : "light");
 
 if (themeToggle) {
   themeToggle.addEventListener("click", () => {
