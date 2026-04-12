@@ -7,451 +7,287 @@
     <title>Erick Njoroge | Full Stack Developer</title>
     <meta
       name="description"
-      content="Portfolio for Erick Njoroge, a full stack developer building education, commerce, and agriculture products with modern web tools."
+      content="Portfolio for Erick Njoroge, a full stack developer building polished full stack products across education, commerce, and marketplace systems."
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Erick Njoroge</div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <body data-theme="dark">
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand-block">
+          <div class="brand-name">Erick Njoroge</div>
+          <div class="brand-role">Full Stack Developer</div>
+        </div>
 
-    <nav id="hamburger-nav">
-      <div class="logo">Erick Njoroge</div>
-      <div class="hamburger-menu">
-        <button
-          class="hamburger-icon"
-          type="button"
-          aria-label="Toggle menu"
-          aria-expanded="false"
-          onclick="toggleMenu()"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <ul class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
 
-    <main>
-      <section id="profile" class="section section--hero">
-        <div class="section-shell hero-grid">
-          <div class="section__text">
-            <p class="section__text__p1">Full Stack Developer</p>
-            <h1 class="title title--hero">I build practical digital products that people can actually use.</h1>
+        <div class="header-actions">
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme">
+            Light mode
+          </button>
+          <button
+            class="menu-toggle"
+            id="menu-toggle"
+            type="button"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <main>
+        <section class="hero-section">
+          <div class="hero-copy-block">
+            <div class="availability-badge">Available for full stack roles</div>
+            <h1>
+              I build polished full stack products that feel clear, reliable, and production-ready.
+            </h1>
             <p class="hero-copy">
-              I work across frontend and backend to ship clean interfaces, reliable APIs, and
-              payment-ready platforms. My recent work spans education, commerce, and agriculture.
+              Full stack developer with strong frontend taste and backend practicality across
+              dashboards, subscription platforms, storefronts, APIs, auth, and payment flows.
             </p>
 
-            <div class="hero-badges">
+            <div class="skill-pills">
+              <span>React</span>
               <span>Next.js</span>
-              <span>Node.js</span>
               <span>TypeScript</span>
-              <span>Payments</span>
+              <span>Node.js</span>
+              <span>Supabase</span>
+              <span>MySQL</span>
             </div>
 
-            <div class="btn-container btn-container--hero">
-              <a class="btn btn-color-1" href="./assets/Stockholm-Resume.pdf" target="_blank" rel="noreferrer">
-                Download CV
-              </a>
-              <a class="btn btn-color-2" href="#projects">View Projects</a>
-            </div>
-
-            <div id="socials-container">
-              <a href="https://github.com/eriqck" target="_blank" rel="noreferrer" aria-label="GitHub">
-                <img src="./assets/github.png" alt="GitHub icon" class="icon" />
-              </a>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">View Projects</a>
               <a
-                href="https://linkedin.com/in/developererick"
+                class="button button-secondary"
+                href="./assets/Stockholm-Resume.pdf"
                 target="_blank"
                 rel="noreferrer"
-                aria-label="LinkedIn"
               >
-                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon" />
+                Download CV
               </a>
             </div>
           </div>
 
-          <div class="hero-visual">
-            <div class="section__pic-container">
-              <img src="./assets/erikpp (2).png" alt="Erick Njoroge portrait" />
-            </div>
-            <div class="hero-summary">
-              <div class="summary-item">
-                <strong>3+ years</strong>
-                <span>Building full stack web products</span>
-              </div>
-              <div class="summary-item">
-                <strong>3 live-ready concepts</strong>
-                <span>Education, ecommerce, and agri-tech delivery</span>
-              </div>
-              <div class="summary-item">
-                <strong>Core focus</strong>
-                <span>Responsive UX, APIs, auth, storage, and payment flows</span>
+          <div class="hero-panel-wrap">
+            <div class="hero-panel-glow" aria-hidden="true"></div>
+            <div class="hero-panel">
+              <div class="hero-panel-inner">
+                <div class="panel-heading">
+                  <div>
+                    <p class="panel-label">Core strengths</p>
+                    <h2>Full stack product delivery</h2>
+                  </div>
+                  <div class="panel-badge">3+ years</div>
+                </div>
+
+                <div class="strength-list">
+                  <div class="strength-card">Responsive UI and polished interfaces</div>
+                  <div class="strength-card">Reusable components and design consistency</div>
+                  <div class="strength-card">APIs, auth flows, and backend integration</div>
+                  <div class="strength-card">Payments, dashboards, and ecommerce systems</div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="about" class="section">
-        <div class="section-shell about-grid">
-          <div class="about-intro">
-            <p class="section__text__p1">About Me</p>
-            <h2 class="title title--section">I like products that solve a clear problem and feel easy to trust.</h2>
-            <p class="about-copy">
-              I am a full stack developer with hands-on experience shipping product-focused web
-              experiences from concept to interface, API, and database. I care about clarity in the
-              UI, sensible backend structure, and turning rough ideas into something a user can move
-              through without friction.
-            </p>
-            <p class="about-copy">
-              The projects below show the kind of work I enjoy most: subscription products, custom
-              storefronts, dashboards, search, file flows, and integrated payments.
+        <section id="about" class="content-section section-divider">
+          <div class="section-copy">
+            <p class="section-kicker">About</p>
+            <h2>Full stack product work, not just pages.</h2>
+            <p>
+              I enjoy turning rough business ideas into usable products with clear interfaces,
+              sensible backend structure, and thoughtful user flows. My strongest work sits where
+              frontend quality meets real system needs: onboarding, search, subscriptions, checkout,
+              dashboards, admin tools, APIs, and data-backed functionality.
             </p>
           </div>
 
-          <div class="about-details-container">
-            <div class="details-container">
-              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-              <h3>Work Style</h3>
-              <p>Product-minded delivery<br />Frontend and backend ownership</p>
-            </div>
-            <div class="details-container">
-              <img src="./assets/education.png" alt="Education icon" class="icon" />
-              <h3>Education</h3>
-              <p>Software Development<br />Computer Science background</p>
-            </div>
-            <div class="details-container">
-              <img src="./assets/checkmark.png" alt="Stack icon" class="icon" />
-              <h3>Go-To Stack</h3>
-              <p>Next.js, React, Node.js<br />Supabase, MySQL, Paystack</p>
-            </div>
+          <div class="info-grid">
+            <article class="info-card">
+              <p class="info-label">Work style</p>
+              <h3>Calm UI, clean spacing, practical decisions</h3>
+            </article>
+            <article class="info-card">
+              <p class="info-label">Strength</p>
+              <h3>Frontend polish with backend implementation</h3>
+            </article>
+            <article class="info-card">
+              <p class="info-label">Tools</p>
+              <h3>Next.js, React, TypeScript, Tailwind</h3>
+            </article>
+            <article class="info-card">
+              <p class="info-label">Value</p>
+              <h3>Products that look polished and work reliably end to end</h3>
+            </article>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="experience" class="section section--alt">
-        <div class="section-shell">
-          <p class="section__text__p1">Experience</p>
-          <h2 class="title title--section">Tools I reach for most</h2>
-
-          <div class="experience-details-container">
-            <div class="details-container">
-              <h3 class="experience-sub-title">Frontend Development</h3>
-              <div class="article-container">
-                <article>
-                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-                  <div>
-                    <h4>HTML &amp; CSS</h4>
-                    <p>Responsive layouts and polished presentation</p>
-                  </div>
-                </article>
-                <article>
-                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-                  <div>
-                    <h4>JavaScript</h4>
-                    <p>Interactive UI and product behavior</p>
-                  </div>
-                </article>
-                <article>
-                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-                  <div>
-                    <h4>React &amp; Next.js</h4>
-                    <p>Modern app flows and reusable interfaces</p>
-                  </div>
-                </article>
-                <article>
-                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-                  <div>
-                    <h4>TypeScript</h4>
-                    <p>Safer app structure and maintainability</p>
-                  </div>
-                </article>
-              </div>
-            </div>
-
-            <div class="details-container">
-              <h3 class="experience-sub-title">Backend Development</h3>
-              <div class="article-container">
-                <article>
-                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-                  <div>
-                    <h4>Node.js &amp; Express</h4>
-                    <p>REST APIs, auth, and business logic</p>
-                  </div>
-                </article>
-                <article>
-                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-                  <div>
-                    <h4>Supabase</h4>
-                    <p>Storage, auth flows, and app data</p>
-                  </div>
-                </article>
-                <article>
-                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-                  <div>
-                    <h4>MySQL &amp; MongoDB</h4>
-                    <p>Structured persistence for growing products</p>
-                  </div>
-                </article>
-                <article>
-                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-                  <div>
-                    <h4>Paystack Integrations</h4>
-                    <p>Checkout, verification, and payment callbacks</p>
-                  </div>
-                </article>
-              </div>
-            </div>
+        <section id="work" class="content-section section-divider">
+          <div class="section-copy section-copy--narrow">
+            <p class="section-kicker">Work</p>
+            <h2>Recent product themes I have been building around.</h2>
           </div>
-        </div>
-      </section>
 
-      <section id="projects" class="section">
-        <div class="section-shell">
-          <p class="section__text__p1">Selected Work</p>
-          <h2 class="title title--section">Projects I have recently built</h2>
+          <div class="work-grid">
+            <article class="work-card">
+              <p class="work-type">Subscription Platforms</p>
+              <h3>Access plans, gated resources, and clean purchase journeys.</h3>
+              <p>
+                I build membership experiences that make sign-up, access, and plan selection feel
+                simple instead of heavy.
+              </p>
+            </article>
+
+            <article class="work-card">
+              <p class="work-type">Commerce Experiences</p>
+              <h3>Catalog flows that move users from browsing to buying.</h3>
+              <p>
+                My storefront work focuses on clarity, buyer confidence, and checkout paths that
+                reduce hesitation.
+              </p>
+            </article>
+
+            <article class="work-card">
+              <p class="work-type">Marketplace Systems</p>
+              <h3>Listings, admin flows, memberships, and operational tools.</h3>
+              <p>
+                I enjoy product surfaces where frontend experience and backend structure have to
+                work tightly together.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="projects" class="content-section section-divider">
+          <div class="section-copy section-copy--narrow">
+            <p class="section-kicker">Projects</p>
+            <h2>Selected work that shows full stack product thinking.</h2>
+          </div>
 
           <div class="projects-grid">
             <article class="project-card">
-              <div class="project-media project-media--custom">
-                <div class="project-visual project-visual--teacher" aria-label="Teacher Mwangi Academy pricing preview">
-                  <div class="preview-heading">
-                    <strong>Simple plans for parents and teachers.</strong>
-                    <span>Affordable monthly access and one-time purchases.</span>
-                  </div>
-                  <div class="teacher-preview-grid">
-                    <div class="teacher-plan teacher-plan--parent">
-                      <span class="preview-badge">Most popular</span>
-                      <p>Parent Subscription</p>
-                      <h4>KSh 300 <span>/month</span></h4>
-                      <ul>
-                        <li>Revision levels included</li>
-                        <li>Weekly downloadable packs</li>
-                        <li>Parent guidance support</li>
-                      </ul>
-                    </div>
-                    <div class="teacher-plan teacher-plan--teacher">
-                      <p>Teacher Subscription</p>
-                      <h4>KSh 150 <span>/month</span></h4>
-                      <ul>
-                        <li>Assessment bundles</li>
-                        <li>Teaching notes</li>
-                        <li>Optional one-time resources</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+              <p class="project-type">EdTech Platform</p>
+              <h3>Teacher Mwangi Academy</h3>
+              <p class="project-summary">
+                Subscription-based learning platform with gated resources, clean purchase flows, and
+                parent and teacher plans.
+              </p>
+              <div class="project-tags">
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>Supabase</span>
+                <span>Payments</span>
               </div>
-              <div class="project-body">
-                <p class="project-kicker">EdTech / Membership Platform</p>
-                <h3 class="project-title">Teacher Mwangi Academy</h3>
-                <p class="project-copy">
-                  A Next.js platform for selling Kenyan CBE and secondary revision materials with
-                  parent and teacher subscriptions, Google sign-in, protected resources, Supabase
-                  storage, and Paystack checkout.
-                </p>
-                <div class="project-tags">
-                  <span>Next.js 15</span>
-                  <span>TypeScript</span>
-                  <span>Supabase</span>
-                  <span>Paystack</span>
-                </div>
-                <a
-                  class="btn btn-color-2 project-btn"
-                  href="https://teacher-mwangi-academy.vercel.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Visit Live Site
-                </a>
-              </div>
+              <a
+                class="project-button"
+                href="https://teacher-mwangi-academy.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View Live Site
+              </a>
             </article>
 
             <article class="project-card">
-              <div class="project-media project-media--custom">
-                <div class="project-visual project-visual--thika" aria-label="Thika Sacks storefront preview">
-                  <div class="thika-preview-topbar">
-                    <div class="thika-brand">
-                      <span class="brand-dot"></span>
-                      <div>
-                        <strong>Thika Sacks</strong>
-                        <span>Sacks for farms and trade</span>
-                      </div>
-                    </div>
-                    <div class="thika-actions">
-                      <span>WhatsApp</span>
-                      <span>Cart</span>
-                    </div>
-                  </div>
-                  <div class="thika-preview-grid">
-                    <div class="thika-item">
-                      <div class="thika-image thika-image--one"></div>
-                      <strong>Used 50kg Sack</strong>
-                      <span>Ksh 20 per sack</span>
-                    </div>
-                    <div class="thika-item">
-                      <div class="thika-image thika-image--two"></div>
-                      <strong>New 90kg Sisal Sack</strong>
-                      <span>Ksh 250 per sack</span>
-                    </div>
-                    <div class="thika-item">
-                      <div class="thika-image thika-image--three"></div>
-                      <strong>Hermetic Storage Bag</strong>
-                      <span>Ksh 220 per bag</span>
-                    </div>
-                  </div>
-                  <div class="thika-preview-cart">
-                    <strong>Ready to send your order?</strong>
-                    <span>Cart summary and WhatsApp checkout</span>
-                  </div>
-                </div>
+              <p class="project-type">Commerce Storefront</p>
+              <h3>Thika Sacks</h3>
+              <p class="project-summary">
+                Conversion-focused catalog and WhatsApp checkout experience for wholesale and retail
+                sack buyers.
+              </p>
+              <div class="project-tags">
+                <span>UI Design</span>
+                <span>JavaScript</span>
+                <span>Catalog UX</span>
+                <span>Commerce</span>
               </div>
-              <div class="project-body">
-                <p class="project-kicker">Commerce / Custom Storefront</p>
-                <h3 class="project-title">Thika Sacks</h3>
-                <p class="project-copy">
-                  A conversion-focused storefront for sack buyers with searchable catalog browsing,
-                  quantity controls, cart summary, and WhatsApp checkout for wholesale and retail
-                  orders.
-                </p>
-                <div class="project-tags">
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>JavaScript</span>
-                  <span>Commerce UX</span>
-                </div>
-                <a
-                  class="btn btn-color-2 project-btn"
-                  href="https://thika-sacks.vercel.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Visit Live Site
-                </a>
-              </div>
+              <a
+                class="project-button"
+                href="https://thika-sacks.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View Live Site
+              </a>
             </article>
 
             <article class="project-card">
-              <div class="project-media project-media--custom">
-                <div class="project-visual project-visual--agrinova">
-                  <div class="visual-top">
-                    <span>Marketplace</span>
-                    <span>Memberships</span>
-                  </div>
-                  <div class="visual-grid">
-                    <div>
-                      <strong>Farmers</strong>
-                      <span>Listings and products</span>
-                    </div>
-                    <div>
-                      <strong>Buyers</strong>
-                      <span>Orders and checkout</span>
-                    </div>
-                    <div>
-                      <strong>Weather</strong>
-                      <span>Planning and field data</span>
-                    </div>
-                    <div>
-                      <strong>Admin</strong>
-                      <span>Payments and operations</span>
-                    </div>
-                  </div>
-                </div>
+              <p class="project-type">Marketplace MVP</p>
+              <h3>AgriNova</h3>
+              <p class="project-summary">
+                Marketplace concept for farmers and buyers with listings, admin flows, weather
+                support, and memberships.
+              </p>
+              <div class="project-tags">
+                <span>Next.js</span>
+                <span>Express</span>
+                <span>MySQL</span>
+                <span>Auth</span>
               </div>
-              <div class="project-body">
-                <p class="project-kicker">AgriTech / Marketplace MVP</p>
-                <h3 class="project-title">AgriNova</h3>
-                <p class="project-copy">
-                  A smart agriculture marketplace MVP with Express and MySQL on the backend plus a
-                  Next.js frontend for farmer onboarding, produce listings, memberships, orders,
-                  deliveries, and Paystack payment flows.
-                </p>
-                <div class="project-tags">
-                  <span>Express</span>
-                  <span>MySQL</span>
-                  <span>Next.js</span>
-                  <span>JWT Auth</span>
-                </div>
-                <a
-                  class="btn btn-color-2 project-btn"
-                  href="https://github.com/eriqck/AgriNova"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Open Repository
-                </a>
-              </div>
+              <a
+                class="project-button"
+                href="https://github.com/eriqck/AgriNova"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View Case Study
+              </a>
             </article>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="contact" class="section section--alt">
-        <div class="section-shell">
-          <p class="section__text__p1">Get In Touch</p>
-          <h2 class="title title--section">Let&apos;s build something useful</h2>
-
-          <div class="contact-grid">
-            <a class="contact-card" href="mailto:ericdavid348@gmail.com">
-              <img src="./assets/email.png" alt="Email icon" class="icon contact-icon" />
+        <section id="contact" class="content-section section-divider">
+          <div class="contact-panel">
+            <p class="section-kicker">Contact</p>
+            <div class="contact-layout">
               <div>
-                <h3>Email</h3>
-                <p>ericdavid348@gmail.com</p>
+                <h2>
+                  Looking for a full stack developer who can ship polished, reliable product
+                  experiences.
+                </h2>
+                <p class="contact-copy">Open to full stack and product-focused web roles.</p>
               </div>
-            </a>
-
-            <a
-              class="contact-card"
-              href="https://linkedin.com/in/developererick"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-              <div>
-                <h3>LinkedIn</h3>
-                <p>linkedin.com/in/developererick</p>
-              </div>
-            </a>
-
-            <a class="contact-card" href="https://github.com/eriqck" target="_blank" rel="noreferrer">
-              <img src="./assets/github.png" alt="GitHub icon" class="icon contact-icon" />
-              <div>
-                <h3>GitHub</h3>
-                <p>github.com/eriqck</p>
-              </div>
-            </a>
+              <a class="button button-primary contact-button" href="mailto:ericdavid348@gmail.com">
+                Email Me
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
 
-    <footer>
-      <div class="section-shell footer-shell">
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <p>Copyright &#169; 2026 Erick Njoroge. All Rights Reserved.</p>
-      </div>
-    </footer>
+      <footer class="site-footer">
+        <p>Erick Njoroge</p>
+        <p>Full Stack Developer</p>
+      </footer>
+    </div>
+
+    <a
+      href="https://wa.me/254793879977"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noreferrer"
+    >
+      WhatsApp
+    </a>
 
     <script src="script.js"></script>
   </body>

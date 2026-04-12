@@ -1,147 +1,85 @@
-@media screen and (max-width: 1080px) {
-  .hero-grid,
-  .about-grid,
-  .experience-details-container,
-  .contact-grid {
+@media screen and (max-width: 1100px) {
+  .hero-section,
+  .work-grid,
+  .projects-grid,
+  .info-grid,
+  .contact-layout {
     grid-template-columns: 1fr;
   }
 
-  .title--hero,
-  .title--section {
-    max-width: none;
+  .contact-button {
+    justify-self: start;
   }
 }
 
-@media screen and (max-width: 1180px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+@media screen and (max-width: 860px) {
+  .page-shell {
+    width: calc(100% - 24px);
+    padding-top: 12px;
   }
 
-  .projects-grid .project-card:last-child {
-    grid-column: 1 / -1;
+  .site-header {
+    top: 12px;
   }
-}
 
-@media screen and (max-width: 820px) {
-  #desktop-nav {
+  .site-nav {
     display: none;
   }
 
-  #hamburger-nav {
-    display: block;
+  .menu-toggle {
+    display: inline-flex;
   }
 
-  #hamburger-nav nav,
-  #hamburger-nav {
-    padding: 0;
-  }
-
-  .section {
-    padding: 72px 0;
-  }
-
-  .section--hero {
-    padding-top: 52px;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .projects-grid .project-card:last-child {
-    grid-column: auto;
-  }
-
-  .teacher-preview-grid,
-  .thika-preview-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .title--hero {
-    font-size: 2.8rem;
-  }
-
-  .title--section {
-    font-size: 2rem;
-  }
-
-  .footer-shell {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  footer p {
-    text-align: left;
+  .hero-section {
+    padding: 48px 2px 72px;
   }
 }
 
-@media screen and (max-width: 600px) {
-  #hamburger-nav {
-    top: 10px;
-    width: calc(100% - 20px);
-    margin-top: 10px;
+@media screen and (max-width: 640px) {
+  .site-header {
+    padding: 16px;
   }
 
-  nav {
-    padding: 14px 14px;
+  .theme-toggle {
+    padding: 10px 14px;
+    font-size: 0.85rem;
   }
 
-  .section-shell {
-    width: calc(100% - 20px);
-  }
-
-  .section {
-    padding: 60px 0;
-  }
-
-  .title--hero {
-    font-size: 2.2rem;
-  }
-
-  .title--section {
-    font-size: 1.7rem;
+  .hero-section h1 {
+    font-size: clamp(2.3rem, 14vw, 3.6rem);
   }
 
   .hero-copy,
-  .about-copy,
-  .project-copy {
+  .section-copy p,
+  .project-summary,
+  .work-card p:last-child,
+  .contact-copy {
     font-size: 0.98rem;
   }
 
-  .hero-badges span,
-  .project-tags span {
-    width: auto;
-  }
-
-  .btn {
+  .button,
+  .project-button {
     width: 100%;
   }
 
-  .visual-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .preview-heading strong {
-    font-size: 1.5rem;
-  }
-
-  .teacher-plan h4 {
-    font-size: 2rem;
-  }
-
-  .thika-preview-topbar,
-  .thika-preview-cart {
+  .hero-actions {
     flex-direction: column;
-    align-items: flex-start;
   }
 
-  .contact-card {
-    align-items: flex-start;
+  .strength-card,
+  .info-card,
+  .work-card,
+  .project-card,
+  .contact-panel {
+    padding: 22px;
   }
 
-  .footer-shell .nav-links {
+  .site-footer {
     flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
+  }
+
+  .whatsapp-float {
+    right: 16px;
+    bottom: 16px;
   }
 }
