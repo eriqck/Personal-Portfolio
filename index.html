@@ -7,290 +7,258 @@
     <title>Erick Njoroge | Full Stack Developer</title>
     <meta
       name="description"
-      content="Portfolio for Erick Njoroge, a full stack developer building polished full stack products across education, commerce, and marketplace systems."
+      content="Portfolio for Erick Njoroge, a full stack developer building polished web products across education, commerce, and marketplace systems."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
-  <body data-theme="dark">
-    <div class="page-shell">
-      <header class="site-header">
-        <div class="brand-block">
-          <div class="brand-name">Erick Njoroge</div>
-          <div class="brand-role">Full Stack Developer</div>
-        </div>
+  <body>
+    <div class="accent-bar" aria-hidden="true"></div>
 
-        <nav class="site-nav" aria-label="Primary">
-          <a href="#about">About</a>
-          <a href="#work">Work</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
+    <header class="site-header" id="home">
+      <a class="brand" href="#home">
+        <span class="brand-name">Erick Njoroge</span>
+        <span class="brand-role">Full Stack Developer</span>
+      </a>
 
-        <div class="header-actions">
-          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme">
-            Light mode
-          </button>
-          <button
-            class="menu-toggle"
-            id="menu-toggle"
-            type="button"
-            aria-label="Toggle navigation"
-            aria-expanded="false"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-      </header>
+      <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
+      <nav class="site-nav">
+        <a href="#home">Home</a>
         <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="https://github.com/eriqck" target="_blank" rel="noreferrer">Code</a>
+        <a href="#connect">Connect</a>
       </nav>
+    </header>
 
-      <main>
-        <section class="hero-section">
-          <div class="hero-copy-block">
-            <div class="availability-badge">Available for full stack roles</div>
-            <div class="hero-portrait-large">
-              <img src="./assets/erikpp (2).png" alt="Erick Njoroge portrait" />
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="https://github.com/eriqck" target="_blank" rel="noreferrer">Code</a>
+      <a href="#connect">Connect</a>
+    </nav>
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-copy">
+          <h1>
+            <span class="hero-title-line hero-title-line--primary hero-title-line--terminal">
+              <span class="terminal-prompt">&gt;</span>
+              <span class="terminal-text" data-text="Full Stack Developer.">Full Stack Developer.</span>
+              <span class="terminal-cursor" aria-hidden="true"></span>
+            </span>
+            <span class="hero-title-line hero-title-line--accent">Product Builder.</span>
+            <span class="hero-title-line hero-title-line--secondary">Problem Solver.</span>
+          </h1>
+
+          <p class="hero-lead">
+            I craft scalable, high-quality applications with a strong focus on performance,
+            accessibility, clean interfaces, and user experience.
+          </p>
+
+          <p class="hero-body">
+            My recent work spans subscription platforms, storefronts, and marketplace systems. I
+            enjoy shipping products that feel thoughtful from the first click to the backend logic
+            that makes everything work.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-outline" href="#projects">Portfolio</a>
+            <a class="button button-outline" href="#about">About Me</a>
+            <a class="button button-accent" href="#connect">Connect with Me</a>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="hero-profile-shell">
+            <img src="./assets/erik.jpg" alt="Erick Njoroge portrait" class="hero-profile-image" />
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery-section" id="projects">
+        <div class="section-heading section-heading--centered">
+          <p>Here are a few examples of my work. If you would like to see more, check out my GitHub page.</p>
+        </div>
+
+        <div class="project-gallery" id="project-gallery"></div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="about-copy">
+          <p class="eyebrow">A little more about me...</p>
+          <p>
+            I started my journey as a self-taught developer and have since grown into a full stack
+            engineer who enjoys building clean, useful experiences across the frontend and backend.
+            My day-to-day toolkit includes React, TypeScript, Node.js, modern CSS, API work, and
+            database-backed product development.
+          </p>
+          <p>
+            I care deeply about quality in the details: responsive layouts, thoughtful copy,
+            reliable systems, and interfaces that feel intuitive instead of heavy. I like working
+            where strong product thinking meets strong engineering.
+          </p>
+          <p>
+            Outside of work, I am always learning and making things, whether that means exploring a
+            new idea, refining an interaction, or figuring out a better way to structure a product.
+          </p>
+        </div>
+
+        <aside class="tools-card">
+          <h2>Tools I Work With Daily</h2>
+          <div class="tools-grid">
+            <div class="tool-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                alt="HTML"
+              />
+              <span>HTML</span>
             </div>
-            <p class="hero-copy">
-              I build full stack products with a strong eye for interface quality and a practical
-              approach to the backend. Most of my best work lives around real product flows:
-              onboarding, subscriptions, storefronts, admin tools, auth, and payments.
-            </p>
-
-            <div class="skill-pills">
+            <div class="tool-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                alt="CSS"
+              />
+              <span>CSS</span>
+            </div>
+            <div class="tool-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript"
+              />
+              <span>JavaScript</span>
+            </div>
+            <div class="tool-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                alt="React"
+              />
               <span>React</span>
+            </div>
+            <div class="tool-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                alt="Next.js"
+              />
               <span>Next.js</span>
-              <span>TypeScript</span>
-              <span>Node.js</span>
-              <span>Supabase</span>
-              <span>MySQL</span>
             </div>
-
-            <div class="hero-actions">
-              <a class="button button-primary" href="#projects">View Projects</a>
-              <a
-                class="button button-secondary"
-                href="./assets/Erick_Mwangi_Fullstack_Developer_Resume.pdf"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Download CV
-              </a>
+            <div class="tool-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg"
+                alt="GraphQL"
+              />
+              <span>GraphQL</span>
             </div>
-          </div>
-
-          <div class="hero-panel-wrap">
-            <div class="hero-panel-glow" aria-hidden="true"></div>
-            <div class="hero-panel">
-              <div class="hero-panel-inner">
-                <div class="panel-heading">
-                  <div>
-                    <p class="panel-label">What I bring</p>
-                    <h2>Product-focused full stack execution</h2>
-                  </div>
-                  <div class="panel-badge">5+ years</div>
-                </div>
-
-                <div class="strength-list">
-                  <div class="strength-card">Responsive UI and polished interfaces</div>
-                  <div class="strength-card">Reusable components and design consistency</div>
-                  <div class="strength-card">APIs, auth flows, and backend integration</div>
-                  <div class="strength-card">Payments, dashboards, and ecommerce systems</div>
-                </div>
-              </div>
+            <div class="tool-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                alt="Figma"
+              />
+              <span>Figma</span>
+            </div>
+            <div class="tool-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                alt="Git"
+              />
+              <span>Git</span>
+            </div>
+            <div class="tool-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                alt="VS Code"
+              />
+              <span>VS Code</span>
             </div>
           </div>
-        </section>
+        </aside>
+      </section>
 
-        <section id="about" class="content-section section-divider">
-          <div class="section-copy">
-            <p class="section-kicker">About</p>
-            <h2>I like owning the product experience, not just shipping screens.</h2>
-            <p>
-              I enjoy taking a rough idea, understanding what the product really needs, and turning
-              it into something people can actually use with confidence. That usually means writing
-              the frontend, shaping the backend, and paying attention to the little details that
-              make the whole thing feel intentional.
-            </p>
+      <section class="project-ledger-section">
+        <div class="services-terminal" aria-label="Services and passion terminal">
+          <div class="services-terminal__bar">
+            <span class="services-terminal__dot services-terminal__dot--pink"></span>
+            <span class="services-terminal__dot services-terminal__dot--gold"></span>
+            <span class="services-terminal__dot services-terminal__dot--green"></span>
+            <span class="services-terminal__title">erick-services.sh</span>
           </div>
-
-          <div class="info-grid">
-            <article class="info-card">
-              <p class="info-label">Work style</p>
-              <h3>Calm UI, clean spacing, practical decisions</h3>
-            </article>
-            <article class="info-card">
-              <p class="info-label">Strength</p>
-              <h3>Frontend polish with backend implementation</h3>
-            </article>
-            <article class="info-card">
-              <p class="info-label">Tools</p>
-              <h3>Next.js, React, TypeScript, Tailwind</h3>
-            </article>
-            <article class="info-card">
-              <p class="info-label">Value</p>
-              <h3>Products that look polished and work reliably end to end</h3>
-            </article>
-          </div>
-        </section>
-
-        <section id="work" class="content-section section-divider">
-          <div class="section-copy section-copy--narrow">
-            <p class="section-kicker">How I Work</p>
-            <h2>The kind of product problems I naturally lean toward.</h2>
-          </div>
-
-          <div class="work-grid">
-            <article class="work-card">
-              <p class="work-type">Subscription Platforms</p>
-              <h3>Access plans, gated content, and purchase flows that feel straightforward.</h3>
-              <p>
-                I like building membership products where pricing, sign-up, and access feel clear
-                from the first click instead of confusing or overloaded.
-              </p>
-            </article>
-
-            <article class="work-card">
-              <p class="work-type">Commerce Experiences</p>
-              <h3>Catalog and checkout experiences that help people decide faster.</h3>
-              <p>
-                My commerce work focuses on buyer confidence: clearer product structure, cleaner
-                decisions, and less friction between browsing and buying.
-              </p>
-            </article>
-
-            <article class="work-card">
-              <p class="work-type">Marketplace Systems</p>
-              <h3>Listings, admin flows, memberships, and useful operational tooling.</h3>
-              <p>
-                I enjoy systems where the interface and backend logic need to stay in sync because
-                that is where product thinking really matters.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section id="projects" class="content-section section-divider">
-          <div class="section-copy section-copy--narrow">
-            <p class="section-kicker">Projects</p>
-            <h2>Projects I have built hands-on from product idea to working experience.</h2>
-          </div>
-
-          <div class="projects-grid">
-            <article class="project-card">
-              <p class="project-type">EdTech Platform</p>
-              <h3>Teacher Mwangi Academy</h3>
-              <p class="project-summary">
-                A learning platform I shaped around access control, subscription plans, protected
-                resources, and a cleaner experience for both parents and teachers.
-              </p>
-              <div class="project-tags">
-                <span>Next.js</span>
-                <span>TypeScript</span>
-                <span>Supabase</span>
-                <span>Payments</span>
-              </div>
-              <a
-                class="project-button"
-                href="https://teacher-mwangi-academy.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                View Live Site
-              </a>
-            </article>
-
-            <article class="project-card">
-              <p class="project-type">Commerce Storefront</p>
-              <h3>Thika Sacks</h3>
-              <p class="project-summary">
-                A practical commerce experience I built around fast catalog scanning, buyer clarity,
-                and WhatsApp checkout for both wholesale and retail orders.
-              </p>
-              <div class="project-tags">
-                <span>UI Design</span>
-                <span>JavaScript</span>
-                <span>Catalog UX</span>
-                <span>Commerce</span>
-              </div>
-              <a
-                class="project-button"
-                href="https://thika-sacks.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                View Live Site
-              </a>
-            </article>
-
-            <article class="project-card">
-              <p class="project-type">Marketplace MVP</p>
-              <h3>AgriNova</h3>
-              <p class="project-summary">
-                A marketplace MVP I designed around real product structure: listings, auth, buyer
-                and seller flows, admin needs, weather support, and memberships.
-              </p>
-              <div class="project-tags">
-                <span>Next.js</span>
-                <span>Express</span>
-                <span>MySQL</span>
-                <span>Auth</span>
-              </div>
-              <a
-                class="project-button"
-                href="https://github.com/eriqck/AgriNova"
-                target="_blank"
-                rel="noreferrer"
-              >
-                View Case Study
-              </a>
-            </article>
-          </div>
-        </section>
-
-        <section id="contact" class="content-section section-divider">
-          <div class="contact-panel">
-            <p class="section-kicker">Contact</p>
-            <div class="contact-layout">
-              <div>
-                <h2>
-                  Looking for someone who can own both the interface and the system behind it.
-                </h2>
-                <p class="contact-copy">
-                  I am open to full stack and product-focused roles where thoughtful execution
-                  matters as much as getting features out.
-                </p>
-              </div>
-              <a class="button button-primary contact-button" href="mailto:ericdavid348@gmail.com">
-                Email Me
-              </a>
+          <div class="services-terminal__body">
+            <div class="services-terminal__intro">
+              <span class="services-terminal__prompt">$</span>
+              <span>cat passion-and-services.txt</span>
             </div>
+            <div class="services-terminal__lines" id="services-terminal-lines" aria-live="polite"></div>
           </div>
-        </section>
-      </main>
+        </div>
 
-      <footer class="site-footer">
-        <p>Erick Njoroge</p>
-        <p>Full Stack Developer</p>
-      </footer>
-    </div>
+        <div class="ledger-copy">
+          <p class="eyebrow">Projects</p>
+          <p class="ledger-intro">
+            I have been lucky enough to work on some amazing projects and build some really great
+            people-first web experiences.
+          </p>
+          <div class="ledger-list" id="ledger-list"></div>
+        </div>
+      </section>
 
-    <a
-      href="https://wa.me/254798446573"
-      class="whatsapp-float"
-      target="_blank"
-      rel="noreferrer"
-    >
-      WhatsApp
-    </a>
+      <section class="contact-section" id="connect">
+        <div class="contact-intro">
+          <p>
+            <span class="contact-intro-shell">
+              <span class="contact-intro-prompt">&gt;</span>
+              <span>Let&apos;s talk about what you need and shape a custom proposal around it.</span>
+            </span>
+          </p>
+          <span></span>
+        </div>
+
+        <form class="contact-card" id="contact-form">
+          <div class="form-row">
+            <input type="text" name="firstName" placeholder="First Name" />
+            <input type="text" name="lastName" placeholder="Last Name" />
+          </div>
+          <div class="form-row form-row--single">
+            <input type="email" name="email" placeholder="Email" />
+          </div>
+          <label class="message-label" for="message">Let's Talk</label>
+          <textarea id="message" name="message"></textarea>
+          <button class="send-button" type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-icons">
+        <a href="mailto:ericdavid348@gmail.com" aria-label="Email">✈</a>
+        <a href="https://x.com/" target="_blank" rel="noreferrer" aria-label="Twitter">𝕏</a>
+        <a href="https://instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">◎</a>
+        <a href="https://github.com/eriqck" target="_blank" rel="noreferrer" aria-label="GitHub">◉</a>
+      </div>
+      <div class="footer-line"></div>
+      <div class="footer-contact">
+        <span>0798 446 573</span>
+        <span>ericdavid348@gmail.com</span>
+      </div>
+      <p>Copyright © 2026 Erick Njoroge. All rights reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
   </body>

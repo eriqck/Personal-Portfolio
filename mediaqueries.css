@@ -1,85 +1,257 @@
-@media screen and (max-width: 1100px) {
-  .hero-section,
-  .work-grid,
-  .projects-grid,
-  .info-grid,
-  .contact-layout {
+@media screen and (max-width: 1180px) {
+  .hero-section {
     grid-template-columns: 1fr;
   }
 
-  .contact-button {
-    justify-self: start;
+  .hero-copy {
+    max-width: none;
+    padding-top: 56px;
+    padding-bottom: 32px;
+  }
+
+  .hero-copy,
+  .about-section,
+  .project-ledger-section {
+    padding-right: 36px;
+    padding-left: 36px;
+  }
+
+  .project-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-media {
+    padding: 0 36px 56px;
+  }
+
+   .hero-profile-shell {
+    width: min(100%, 320px);
+  }
+
+  .about-section {
+    grid-template-columns: 1fr;
+  }
+
+  .project-ledger-section {
+    grid-template-columns: 1fr;
+  }
+
+  .ledger-copy {
+    max-width: none;
+  }
+
+  .services-terminal__body {
+    min-height: 0;
   }
 }
 
 @media screen and (max-width: 860px) {
-  .page-shell {
-    width: calc(100% - 24px);
-    padding-top: 12px;
-  }
-
-  .site-header {
-    top: 12px;
-  }
-
   .site-nav {
     display: none;
   }
 
   .menu-toggle {
-    display: inline-flex;
+    display: flex;
   }
 
-  .hero-section {
-    padding: 48px 2px 72px;
+  .hero-copy {
+    padding: 44px 24px;
+  }
+
+  .hero-media {
+    padding: 0 24px 44px;
+  }
+
+  .brand-name {
+    font-size: 1.45rem;
+  }
+
+  .project-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .about-section,
+  .gallery-card--text-split .split-content,
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-card--wide-copy .small-feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .split-left h3 {
+    font-size: 2.2rem;
+  }
+
+  .contact-intro-shell {
+    white-space: normal;
+    text-wrap: balance;
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 620px) {
+  .site-header,
+  .mobile-nav,
+  .contact-section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .hero-copy {
+    padding: 36px 16px;
+  }
+
+  .hero-media {
+    padding: 0 16px 36px;
+  }
+
+  .hero-copy h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-title-line {
+    white-space: normal;
+  }
+
+  .hero-title-line--terminal {
+    gap: 0.12em;
+    padding: 0.18em 0.3em;
+    font-size: clamp(1.02rem, 6vw, 1.45rem);
+  }
+
+  .terminal-text {
+    min-width: auto;
+  }
+
+  .hero-lead,
+  .hero-body,
+  .section-heading p,
+  .about-copy p,
+  .ledger-intro,
+  .ledger-item p,
+  .contact-intro p {
+    font-size: 0.92rem;
+  }
+
+  .about-section,
+  .project-ledger-section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .about-section {
+    gap: 30px;
+    padding-top: 44px;
+    padding-bottom: 56px;
+  }
+
+  .project-ledger-section {
+    gap: 28px;
+    padding-top: 16px;
+    padding-bottom: 56px;
+  }
+
+  .services-terminal {
+    border-radius: 12px;
+  }
+
+  .services-terminal__body {
+    padding: 18px 16px 22px;
+  }
+
+  .services-terminal__intro,
+  .services-terminal__line {
+    gap: 8px;
+  }
+
+  .services-terminal__lines {
+    font-size: 0.8rem;
+  }
+
+  .services-terminal__line {
+    flex-wrap: wrap;
+  }
+
+  .contact-intro p {
+    width: 100%;
+  }
+
+  .contact-intro-shell {
+    max-width: 100%;
+    justify-content: center;
+    padding: 0.45rem 0.7rem;
+    border-radius: 16px;
+    white-space: normal;
+  }
+
+  .tools-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-card {
+    padding: 20px;
+  }
+
+  .gallery-card__topbar {
+    flex-wrap: wrap;
+  }
+
+  .gallery-card__image {
+    min-height: 200px;
+  }
+
+  .footer-contact {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 420px) {
   .site-header {
-    padding: 16px;
+    gap: 12px;
+    padding-left: 14px;
+    padding-right: 14px;
   }
 
-  .theme-toggle {
-    padding: 10px 14px;
-    font-size: 0.85rem;
+  .brand-name {
+    font-size: 1.2rem;
   }
 
-  .hero-section h1 {
-    font-size: clamp(2.3rem, 14vw, 3.6rem);
+  .brand-role {
+    font-size: 0.86rem;
   }
 
-  .hero-copy,
-  .section-copy p,
-  .project-summary,
-  .work-card p:last-child,
-  .contact-copy {
-    font-size: 0.98rem;
+  .hero-copy {
+    padding: 28px 14px;
   }
 
-  .button,
-  .project-button {
+  .hero-media {
+    padding: 0 14px 30px;
+  }
+
+  .hero-profile-shell {
+    width: min(100%, 260px);
+  }
+
+  .button {
     width: 100%;
   }
 
   .hero-actions {
-    flex-direction: column;
+    width: 100%;
   }
 
-  .strength-card,
-  .info-card,
-  .work-card,
-  .project-card,
-  .contact-panel {
-    padding: 22px;
+  .tools-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 10px;
   }
 
-  .site-footer {
-    flex-direction: column;
+  .services-terminal__title {
+    font-size: 0.68rem;
   }
 
-  .whatsapp-float {
-    right: 16px;
-    bottom: 16px;
+  .contact-card {
+    padding: 18px 14px;
   }
 }
