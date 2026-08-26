@@ -772,14 +772,68 @@ main {
 }
 
 .send-button {
-  display: block;
   min-width: 160px;
-  margin-top: 24px;
-  margin-left: auto;
   border: 0;
   background: #ffb31c;
   padding: 12px 26px;
   color: #ffffff;
+}
+
+.contact-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.whatsapp-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 108px;
+  padding: 12px 18px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: transform 180ms ease, filter 180ms ease;
+}
+
+.whatsapp-button:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.06);
+}
+
+.whatsapp-button--chat {
+  background: #2563eb;
+}
+
+.whatsapp-button--standard {
+  position: fixed;
+  right: 26px;
+  bottom: 24px;
+  z-index: 10;
+  width: 60px;
+  min-width: 60px;
+  height: 60px;
+  padding: 0;
+  border-radius: 50%;
+  background: #25d366;
+  color: #111111;
+  box-shadow: 0 8px 20px rgba(31, 38, 51, 0.2);
+}
+
+.whatsapp-button--standard svg {
+  width: 32px;
+  height: 32px;
+  fill: currentColor;
 }
 
 .site-footer {

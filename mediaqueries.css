@@ -254,4 +254,12 @@
   .contact-card {
     padding: 18px 14px;
   }
+
+  .whatsapp-button--standard {
+    right: 18px;
+    bottom: 18px;
+    width: 56px;
+    min-width: 56px;
+    height: 56px;
+  }
 }
