@@ -1,128 +1,32 @@
 const projects = [
   {
-    name: "Teacher Mwangi Academy",
-    type: "EdTech Platform",
-    tone: "pink",
-    topLabel: "Teacher Mwangi Academy",
-    action: "LIVE SITE",
-    image: "./assets/project-1.png",
-    summary:
-      "A subscription-based learning platform with parent and teacher plans, protected resources, cleaner onboarding, and purchase flows shaped for real users.",
-    link: "https://teacher-mwangi-academy.vercel.app/",
-  },
-  {
-    name: "AgriNova",
-    type: "Marketplace MVP",
-    tone: "blue",
-    topLabel: "AgriNova Marketplace",
-    action: "CASE STUDY",
-    image: "./assets/project-2.png",
-    summary:
-      "A marketplace product direction for farmers and buyers with listings, admin needs, membership ideas, and practical marketplace structure.",
-    link: "https://github.com/eriqck/AgriNova",
-  },
-  {
     name: "Ticketia",
     type: "Event Ticketing Platform",
     tone: "dark",
-    topLabel: "Ticketia",
-    action: "LIVE SITE",
     image: "./assets/ticketia.png",
     summary:
-      "A ticketing platform designed to make discovering events, managing listings, and securing tickets feel simple for both organizers and attendees.",
+      "A focused ticketing experience that helps people discover events and gives organizers a clear path to publish and manage them.",
     link: "https://ticketia.live/",
     github: "https://github.com/eriqck/ticketia",
   },
 ];
 
-const extraShowcaseCards = [
-  {
-    type: "wide-copy",
-    title: "Explore product ideas with strong structure and thoughtful execution.",
-    body:
-      "I like building products that feel intentional from the first section to the final action. That includes information hierarchy, visual clarity, and the kind of backend structure that keeps the experience reliable as it grows.",
-    items: [
-      ["Product thinking", "I care about how the user actually moves through the product."],
-      ["System quality", "I build with structure so the frontend and backend support each other."],
-    ],
-  },
-  {
-    type: "text-split",
-    tone: "pink",
-    title: "Clear. Practical. Built to be used.",
-    body:
-      "The products I enjoy most are the ones that solve a real need, keep decisions easy, and make the path forward feel obvious.",
-  },
-];
-
 function createProjectCard(project) {
   const article = document.createElement("article");
-  article.className = "gallery-card gallery-card--project";
+  article.className = "gallery-card gallery-card--featured";
   article.dataset.tone = project.tone;
 
   article.innerHTML = `
-    <div class="gallery-card__topbar">
-      <span>${project.topLabel}</span>
+    <div class="gallery-card__media">
+      <img class="gallery-card__image" src="${project.image}" alt="${project.name} preview" />
+    </div>
+    <div class="gallery-card__content">
+      <p class="gallery-card__type">${project.type}</p>
+      <h3>${project.name}</h3>
+      <p class="gallery-card__summary">${project.summary}</p>
       <div class="gallery-card__links">
-        <a href="${project.link}" target="_blank" rel="noreferrer">${project.action}</a>
-        ${
-          project.github
-            ? `<a href="${project.github}" target="_blank" rel="noreferrer">GITHUB</a>`
-            : ""
-        }
-      </div>
-    </div>
-    <img class="gallery-card__image" src="${project.image}" alt="${project.name} preview" />
-  `;
-
-  article.addEventListener("click", (event) => {
-    if (event.target.closest("a")) return;
-    window.open(project.link, "_blank", "noopener,noreferrer");
-  });
-
-  return article;
-}
-
-function createWideCopyCard(card) {
-  const article = document.createElement("article");
-  article.className = "gallery-card gallery-card--wide-copy";
-
-  article.innerHTML = `
-    <h3>${card.title}</h3>
-    <p>${card.body}</p>
-    <div class="small-feature-grid">
-      ${card.items
-        .map(
-          ([title, text]) => `
-            <div class="feature-mini">
-              <strong>${title}</strong>
-              <span>${text}</span>
-            </div>
-          `
-        )
-        .join("")}
-    </div>
-  `;
-
-  return article;
-}
-
-function createTextSplitCard(card) {
-  const article = document.createElement("article");
-  article.className = "gallery-card gallery-card--text-split";
-  article.dataset.tone = card.tone;
-
-  article.innerHTML = `
-    <div class="gallery-card__topbar">
-      <span>Product Notes</span>
-      <button type="button">DETAIL</button>
-    </div>
-    <div class="split-content">
-      <div class="split-left">
-        <h3>${card.title}</h3>
-      </div>
-      <div class="split-right">
-        <p>${card.body}</p>
+        <a class="gallery-card__primary-link" href="${project.link}" target="_blank" rel="noreferrer">Visit live site <span aria-hidden="true">↗</span></a>
+        <a class="gallery-card__secondary-link" href="${project.github}" target="_blank" rel="noreferrer">View source <span aria-hidden="true">↗</span></a>
       </div>
     </div>
   `;
@@ -134,16 +38,9 @@ function renderGallery() {
   const gallery = document.getElementById("project-gallery");
   if (!gallery) return;
 
-  const cards = [
-    createProjectCard(projects[0]),
-    createWideCopyCard(extraShowcaseCards[0]),
-    createProjectCard(projects[1]),
-    createProjectCard(projects[2]),
-    createProjectCard(projects[1]),
-    createTextSplitCard(extraShowcaseCards[1]),
-  ];
-
-  cards.forEach((card) => gallery.appendChild(card));
+  projects.slice(0, 4).forEach((project) => {
+    gallery.appendChild(createProjectCard(project));
+  });
 }
 
 function renderLedger() {
