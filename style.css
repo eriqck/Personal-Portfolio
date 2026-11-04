@@ -391,13 +391,22 @@ main {
   font-weight: 500;
 }
 
-.gallery-card__topbar button {
+.gallery-card__links {
+  display: flex;
+  gap: 8px;
+}
+
+.gallery-card__links a {
   border: 1px solid rgba(255, 255, 255, 0.65);
   border-radius: 999px;
   background: transparent;
   padding: 3px 16px;
   color: #ffffff;
   font-size: 0.65rem;
+}
+
+.gallery-card__links a:hover {
+  background: rgba(255, 255, 255, 0.14);
 }
 
 .gallery-card__image {
@@ -675,6 +684,14 @@ main {
   margin-top: 8px;
   font-size: 0.76rem;
   line-height: 1.75;
+}
+
+.ledger-item__repo {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--pink);
+  font-size: 0.78rem;
+  font-weight: 700;
 }
 
 .contact-section {

@@ -22,15 +22,16 @@ const projects = [
     link: "https://github.com/eriqck/AgriNova",
   },
   {
-    name: "Thika Sacks",
-    type: "Commerce Storefront",
+    name: "Ticketia",
+    type: "Event Ticketing Platform",
     tone: "dark",
-    topLabel: "Thika Sacks",
+    topLabel: "Ticketia",
     action: "LIVE SITE",
-    image: "./assets/project-3.png",
+    image: "./assets/ticketia.png",
     summary:
-      "A straightforward commerce experience built for fast catalog scanning, buyer confidence, and WhatsApp checkout for both wholesale and retail orders.",
-    link: "https://thika-sacks.vercel.app/",
+      "A ticketing platform designed to make discovering events, managing listings, and securing tickets feel simple for both organizers and attendees.",
+    link: "https://ticketia.live/",
+    github: "https://github.com/eriqck/ticketia",
   },
 ];
 
@@ -62,12 +63,20 @@ function createProjectCard(project) {
   article.innerHTML = `
     <div class="gallery-card__topbar">
       <span>${project.topLabel}</span>
-      <button type="button">${project.action}</button>
+      <div class="gallery-card__links">
+        <a href="${project.link}" target="_blank" rel="noreferrer">${project.action}</a>
+        ${
+          project.github
+            ? `<a href="${project.github}" target="_blank" rel="noreferrer">GITHUB</a>`
+            : ""
+        }
+      </div>
     </div>
     <img class="gallery-card__image" src="${project.image}" alt="${project.name} preview" />
   `;
 
-  article.addEventListener("click", () => {
+  article.addEventListener("click", (event) => {
+    if (event.target.closest("a")) return;
     window.open(project.link, "_blank", "noopener,noreferrer");
   });
 
@@ -147,6 +156,11 @@ function renderLedger() {
     item.innerHTML = `
       <h3><a href="${project.link}" target="_blank" rel="noreferrer">${project.name}</a></h3>
       <p>${project.summary}</p>
+      ${
+        project.github
+          ? `<a class="ledger-item__repo" href="${project.github}" target="_blank" rel="noreferrer">View on GitHub</a>`
+          : ""
+      }
     `;
     ledger.appendChild(item);
   });
