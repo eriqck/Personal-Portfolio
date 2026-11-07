@@ -9,6 +9,16 @@ const projects = [
     link: "https://ticketia.live/",
     github: "https://github.com/eriqck/ticketia",
   },
+  {
+    name: "Mwangaza AI",
+    type: "AI Payment Operations Assistant",
+    tone: "blue",
+    image: "./assets/mwangaza.png",
+    summary:
+      "An AI-powered assistant for Kenyan payment workflows that explains transaction outcomes using verified PostgreSQL records, Gemini, and a reliable database fallback.",
+    link: "https://mwangaza-ai.onrender.com/",
+    github: "https://github.com/eriqck/mwangaza-ai",
+  },
 ];
 
 function createProjectCard(project) {
