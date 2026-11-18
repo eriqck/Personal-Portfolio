@@ -1,5 +1,24 @@
 const projects = [
   {
+    name: "Travesay",
+    type: "Hotel Booking & Reservation Platform",
+    tone: "red",
+    image: "./assets/travesay.webp",
+    summary:
+      "A WordPress travel and accommodation platform for discovering Kenyan hotels and tours, with booking-oriented destination and experience flows.",
+    link: "https://travesay.com/",
+  },
+  {
+    name: "Msaidizi Diaspora",
+    type: "Diaspora Service Marketplace",
+    tone: "navy",
+    image: "./assets/msaidizi.webp",
+    summary:
+      "A React and TypeScript service platform that helps diaspora clients coordinate building consultancy, property, family errands, government services, investments, and events.",
+    link: "https://github.com/eriqck/msaidizi-diaspora",
+    github: "https://github.com/eriqck/msaidizi-diaspora",
+  },
+  {
     name: "Ticketia",
     type: "Event Ticketing Platform",
     tone: "dark",
@@ -25,6 +44,7 @@ function createProjectCard(project) {
   const article = document.createElement("article");
   article.className = "gallery-card gallery-card--featured";
   article.dataset.tone = project.tone;
+  const hasLiveLink = project.link !== project.github;
 
   article.innerHTML = `
     <div class="gallery-card__media">
@@ -35,8 +55,8 @@ function createProjectCard(project) {
       <h3 class="gallery-card__title${project.name.length > 9 ? " gallery-card__title--compact" : ""}">${project.name}</h3>
       <p class="gallery-card__summary">${project.summary}</p>
       <div class="gallery-card__links">
-        <a class="gallery-card__primary-link" href="${project.link}" target="_blank" rel="noreferrer">Visit live site <span aria-hidden="true">↗</span></a>
-        <a class="gallery-card__secondary-link" href="${project.github}" target="_blank" rel="noreferrer">View source <span aria-hidden="true">↗</span></a>
+        ${hasLiveLink ? `<a class="gallery-card__primary-link" href="${project.link}" target="_blank" rel="noreferrer">Visit live site <span aria-hidden="true">↗</span></a>` : ""}
+        ${project.github ? `<a class="${hasLiveLink ? "gallery-card__secondary-link" : "gallery-card__primary-link"}" href="${project.github}" target="_blank" rel="noreferrer">View source <span aria-hidden="true">↗</span></a>` : ""}
       </div>
     </div>
   `;
