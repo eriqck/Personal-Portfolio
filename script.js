@@ -15,7 +15,7 @@ const projects = [
     image: "./assets/msaidizi.webp",
     summary:
       "A React and TypeScript service platform that helps diaspora clients coordinate building consultancy, property, family errands, government services, investments, and events.",
-    link: "https://github.com/eriqck/msaidizi-diaspora",
+    link: "https://msaidizidiaspora.co.ke",
     github: "https://github.com/eriqck/msaidizi-diaspora",
   },
   {
