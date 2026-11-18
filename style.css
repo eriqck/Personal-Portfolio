@@ -385,6 +385,19 @@ main {
   white-space: nowrap;
 }
 
+.gallery-card__title--medium {
+  font-size: clamp(2.1rem, 3.8vw, 3.6rem) !important;
+  letter-spacing: -0.035em;
+  white-space: nowrap;
+}
+
+.gallery-card__title--wide {
+  font-size: clamp(1.45rem, 1.85vw, 1.85rem) !important;
+  letter-spacing: -0.045em;
+  line-height: 1 !important;
+  white-space: nowrap;
+}
+
 .gallery-card__summary {
   max-width: 34ch;
   margin-top: 24px;

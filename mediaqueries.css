@@ -193,6 +193,13 @@
     padding: 30px 24px;
   }
 
+  .gallery-card__title--medium,
+  .gallery-card__title--wide,
+  .gallery-card__title--compact {
+    font-size: clamp(1.75rem, 9vw, 2.6rem) !important;
+    white-space: normal;
+  }
+
   .gallery-card__media {
     min-height: 240px;
   }
