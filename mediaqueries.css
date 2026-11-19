@@ -193,13 +193,6 @@
     padding: 30px 24px;
   }
 
-  .gallery-card__title--medium,
-  .gallery-card__title--wide,
-  .gallery-card__title--compact {
-    font-size: clamp(1.75rem, 9vw, 2.6rem) !important;
-    white-space: normal;
-  }
-
   .gallery-card__media {
     min-height: 240px;
   }
@@ -264,5 +257,123 @@
     width: 56px;
     min-width: 56px;
     height: 56px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .portfolio-layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .site-header {
+    position: relative;
+    top: auto;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 22px 32px;
+  }
+
+  .sidebar-intro p,
+  .site-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex: 0 0 36px;
+    width: 36px;
+    height: 32px;
+  }
+
+  .mobile-nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 20;
+    width: 100%;
+  }
+
+  .portfolio-layout > main {
+    width: 100%;
+  }
+
+  .site-footer {
+    width: 100%;
+  }
+
+  .hero-copy {
+    padding: 52px 32px 38px;
+  }
+
+  .hero-media {
+    padding: 0 32px 48px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .site-header {
+    padding: 20px 16px;
+  }
+
+  .hero-copy {
+    padding: 38px 20px 28px;
+  }
+
+  .hero-media {
+    padding: 0 20px 38px;
+  }
+
+  .gallery-section {
+    padding: 52px 18px 28px;
+  }
+
+  .project-gallery {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .gallery-card--featured {
+    grid-template-columns: 104px minmax(0, 1fr);
+    gap: 12px;
+    height: 220px;
+    padding: 14px;
+  }
+
+  .gallery-card__media {
+    width: 104px;
+    height: 60px;
+    min-height: 0;
+  }
+
+  .gallery-card__content h3 {
+    font-size: 0.92rem;
+  }
+
+  .gallery-card__summary {
+    font-size: 0.78rem;
+  }
+
+  .gallery-card__links {
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+  }
+
+  .about-section,
+  .project-ledger-section,
+  .contact-section {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .about-section,
+  .ledger-list {
+    grid-template-columns: minmax(0, 1fr);
   }
 }

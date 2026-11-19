@@ -52,7 +52,7 @@ function createProjectCard(project) {
     </div>
     <div class="gallery-card__content">
       <p class="gallery-card__type">${project.type}</p>
-      <h3 class="gallery-card__title${project.name === "Msaidizi Diaspora" ? " gallery-card__title--wide" : project.name === "Travesay" ? " gallery-card__title--medium" : project.name.length > 9 ? " gallery-card__title--compact" : ""}">${project.name}</h3>
+      <h3 class="gallery-card__title"><a href="${project.link}" target="_blank" rel="noreferrer">${project.name} <span aria-hidden="true">↗</span></a></h3>
       <p class="gallery-card__summary">${project.summary}</p>
       <div class="gallery-card__links">
         ${hasLiveLink ? `<a class="gallery-card__primary-link" href="${project.link}" target="_blank" rel="noreferrer">Visit live site <span aria-hidden="true">↗</span></a>` : ""}
